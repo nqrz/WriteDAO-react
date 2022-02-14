@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #0F0E0E;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to top right, #99A799, #FEF5ED);
+}
+
+.btn {
+  border: none;
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #fff;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover:disabled {
+  cursor: progress;
+  background: none;
+}
+
+.card {
+  background: aqua;
+  padding: 8px 23px 8px 23px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
