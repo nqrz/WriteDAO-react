@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ThirdwebSDK } from '@3rdweb/sdk';
+
 import { useWeb3 } from '@3rdweb/hooks';
+import { ThirdwebSDK } from '@3rdweb/sdk';
 
 const sdk = new ThirdwebSDK("rinkeby");
 
@@ -53,6 +54,17 @@ const App = () => {
           <button onClick={() => connectWallet("injected")} className='btn mb-12'>
             Connect your wallet
           </button>
+        </div>
+      </div>
+    )
+  }
+
+  if (hasClaimedNFT) {
+    return (
+      <div className='banner'>
+        <div className='card center'>
+          <h1>WriteDAO</h1>
+          <h6>Congrats! You are member now.</h6>
         </div>
       </div>
     )
